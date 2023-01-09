@@ -5,7 +5,7 @@ import { Suspense, useEffect } from 'react';
 import THREE, { Vector3 } from 'three';
 
 const ParticleScroll: NextPage = () => {
-  const { mouse, camera } = useThree();
+  // const { mouse, camera } = useThree();
 
   const cameraParam = {
     fov: 45,
@@ -17,8 +17,8 @@ const ParticleScroll: NextPage = () => {
     z: 4,
   };
   useEffect(() => {
-    camera.lookAt(new THREE.Vector3(0, 0, 0));
-    camera.far = 100;
+    // camera.lookAt(new THREE.Vector3(0, 0, 0));
+    // camera.far = 100;
   }, []);
 
   return (
