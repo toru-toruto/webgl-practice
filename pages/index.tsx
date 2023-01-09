@@ -3,10 +3,11 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import Box from '../src/components/Box';
+import SpringBox from '../src/components/SpringBox';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="w-full h-[100vh]">
       <Suspense fallback={<span>loading...</span>}>
         <Canvas>
           <ambientLight />
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
             enableRotate={true}
           />
           <Box position={[-1.2, 0, 0]} />
+          <SpringBox />
         </Canvas>
       </Suspense>
     </div>
